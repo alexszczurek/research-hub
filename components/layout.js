@@ -17,10 +17,7 @@ export default function Layout({ children, home }) {
           content="Become a total pro at doing user research—from planning it to conducting sessions to analyzing and reporting your findings.
           "
         />
-        <meta
-          property="og:image"
-          content="https://www.uncoverux.buzz/api/og"
-        />
+        <meta property="og:image" content="https://www.uncoverux.buzz/api/og" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
