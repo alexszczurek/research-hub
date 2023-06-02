@@ -1,5 +1,5 @@
 ---
-title: 'UX Research Analysis'
+title: 'UX Reposrt & Deliverables'
 date: '2021-12-24'
 ---
 
