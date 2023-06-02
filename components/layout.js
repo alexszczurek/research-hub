@@ -19,7 +19,7 @@ export default function Layout({ children, home }) {
         />
         <meta
           property="og:image"
-          content="https://ibb.co/kx3zHXp"
+          content="https://www.uncoverux.buzz/api/og"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
