@@ -4,17 +4,18 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'UX Research made simple'
+export const siteTitle = 'UX Research made simple'
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Become a total pro at doing user research—from planning it to conducting sessions to analyzing and reporting your findings.
+          "
         />
         <meta
           property="og:image"
@@ -24,16 +25,26 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap"
+        rel="stylesheet"
+        />
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/logo.svg"
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={64}
+              width={64}
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -43,18 +54,13 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src="/images/profile.jpg"
+                src="/images/logo.svg"
                 className={utilStyles.borderCircle}
-                height={108}
-                width={108}
+                height={64}
+                width={64}
                 alt={name}
               />
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {name}
-              </Link>
-            </h2>
           </>
         )}
       </header>
