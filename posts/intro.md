@@ -1,5 +1,5 @@
 ---
-title: 'Introduction + reserch tips'
+title: 'Introduction + research tips'
 date: '2022-01-04'
 ---
 
